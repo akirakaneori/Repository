@@ -1,5 +1,6 @@
 <?php
 
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -11,5 +12,5 @@
 |
 */
 
-Route::get('/', 'PostController@index');
-Route::get('/posts/{post}', 'PostController@show');
+
+Route::get('/posts', 'PostController@index'); 
