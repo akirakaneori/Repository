@@ -19,7 +19,18 @@ class PostController extends Controller
     
     public function create()
     {
+<<<<<<< HEAD
+        return  view('posts/create');
+    }
+    
+    public function store(Post $post, PostRequest $request)
+    {
+        $input = $request['post'];
+        $post->fill($input)->save();
+        return redirect('/posts/' . $post->id);
+=======
         return view('posts/create'); 
+>>>>>>> origin/master
     }
     
     public function store(Post $post, PostRequest $request) 
