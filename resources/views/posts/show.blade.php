@@ -12,10 +12,12 @@
         <h1 class="title">
             {{ $posts->title }}
         </h1>
+        <p class="edit">[<a href="/posts/{{ $posts->id }}/edit">edit</a>]</p>
         <div class="content">
             <div class="content__post">
                 <h3>本文</h3>
-                <p>{{ $posts->body }}</p>    
+                <p>{{ $posts->body }}</p>
+                <p class='updated_at'>{{ $posts->updated_at }}</p>
             </div>
         </div>
         <div class="footer">
